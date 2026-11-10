@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оскар — стрічка часу · 24 ключові події</title>
+<script>document.documentElement.classList.add('js');</script>
+<meta name="description" content="Хронологічна стрічка часу премії «Оскар»: що є на інфографіці, рекорди кінопремії та 24 ключові події історії.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gold-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6d76b"/>
+      <stop offset="0.5" stop-color="#e8b923"/>
+      <stop offset="1" stop-color="#8a6d18"/>
+    </linearGradient>
+
+    <linearGradient id="osc-metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#6d5312"/>
+      <stop offset="0.14" stop-color="#c9a227"/>
+      <stop offset="0.30" stop-color="#fdf6c9"/>
+      <stop offset="0.44" stop-color="#e8b923"/>
+      <stop offset="0.58" stop-color="#a37f18"/>
+      <stop offset="0.74" stop-color="#f4da78"/>
+      <stop offset="0.88" stop-color="#b8922a"/>
+      <stop offset="1"    stop-color="#5b470e"/>
+    </linearGradient>
+
+    <linearGradient id="osc-reel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#4e3d0c"/>
+      <stop offset="0.2" stop-color="#a9871f"/>
+      <stop offset="0.5" stop-color="#e8b923"/>
+      <stop offset="0.8" stop-color="#a9871f"/>
+      <stop offset="1"   stop-color="#4e3d0c"/>
+    </linearGradient>
+
+    <linearGradient id="osc-blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#6d5312"/>
+      <stop offset="0.30" stop-color="#e8cf7a"/>
+      <stop offset="0.55" stop-color="#fdf6c9"/>
+      <stop offset="0.80" stop-color="#c9a227"/>
+      <stop offset="1"    stop-color="#5b470e"/>
+    </linearGradient>
+
+    <symbol id="oscar" viewBox="0 0 120 300">
+      <!-- плінтус -->
+      <path d="M20 264 H100 a5 5 0 0 1 5 5 v20 a5 5 0 0 1 -5 5 H20 a5 5 0 0 1 -5 -5 v-20 a5 5 0 0 1 5 -5 Z" fill="url(#osc-reel)"/>
+      <rect x="15" y="264" width="90" height="3.5" rx="1.75" fill="#fdf6c9" opacity="0.28"/>
+
+      <!-- котушка кіноплівки -->
+      <path d="M12 226 H108 V258 a48 12 0 0 1 -96 0 Z" fill="url(#osc-reel)"/>
+      <ellipse cx="60" cy="226" rx="48" ry="12" fill="url(#osc-reel)"/>
+      <ellipse cx="60" cy="226" rx="48" ry="12" fill="none" stroke="#5b470e" stroke-width="1.4" opacity="0.45"/>
+      <ellipse cx="60" cy="226" rx="14" ry="3.6" fill="none" stroke="#3b2e08" stroke-width="2" opacity="0.35"/>
+      <g stroke="#3b2e08" stroke-width="2.4" opacity="0.32" stroke-linecap="round">
+        <line x1="60" y1="226" x2="60" y2="238"/>
+        <line x1="60" y1="226" x2="14.4" y2="229.7"/>
+        <line x1="60" y1="226" x2="31.7" y2="216.3"/>
+        <line x1="60" y1="226" x2="88.3" y2="216.3"/>
+        <line x1="60" y1="226" x2="105.6" y2="229.7"/>
+      </g>
+
+      <!-- тінь під фігурою -->
+      <ellipse cx="60" cy="226" rx="17" ry="4.2" fill="#2a2008" opacity="0.34"/>
+
+      <!-- тіло лицаря: вузька шия, різкий перехід у широкі плечі, далі талія й ноги -->
+      <path d="M60 35 C55 35 53 37 52.5 43 L51 50 C44 51 38 55 36.5 63 C35.5 72 36 82 37 92 C38 102 39 110 39.5 118 C39 130 38.5 148 39 168 C39.5 186 40 204 40.5 218 L55 218 L58.5 120 L60 118 L61.5 120 L65 218 L79.5 218 C80 204 80.5 186 81 168 C81.5 148 81 130 80.5 118 C81 110 82 102 83 92 C84 82 84.5 72 83.5 63 C82 55 76 51 69 50 L67.5 43 C67 37 65 35 60 35 Z" fill="url(#osc-metal)" stroke="#2a2008" stroke-opacity="0.32" stroke-width="1"/>
+
+      <!-- руки, складені на руків'ї -->
+      <path d="M45 60 C47 67 50 71 54 73" stroke="#8a6d18" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M75 60 C73 67 70 71 66 73" stroke="#8a6d18" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.85"/>
+
+      <!-- меч: клинок, перехрестя, руків'я, головка -->
+      <rect x="57.2" y="87" width="5.6" height="98" rx="1.5" fill="url(#osc-blade)" stroke="#3b2e08" stroke-opacity="0.6" stroke-width="1.2"/>
+      <rect x="44" y="80" width="32" height="7" rx="3.5" fill="url(#osc-blade)" stroke="#3b2e08" stroke-opacity="0.55" stroke-width="1.1"/>
+      <rect x="57.6" y="62" width="4.8" height="20" rx="2.2" fill="url(#osc-blade)" stroke="#3b2e08" stroke-opacity="0.5" stroke-width="1"/>
+      <circle cx="60" cy="59" r="4.2" fill="url(#osc-blade)" stroke="#3b2e08" stroke-opacity="0.5" stroke-width="1"/>
+
+      <!-- долоні -->
+      <ellipse cx="53.5" cy="71" rx="5.2" ry="4.4" fill="url(#osc-metal)" stroke="#3b2e08" stroke-opacity="0.32" stroke-width="1"/>
+      <ellipse cx="66.5" cy="71" rx="5.2" ry="4.4" fill="url(#osc-metal)" stroke="#3b2e08" stroke-opacity="0.32" stroke-width="1"/>
+
+      <!-- голова -->
+      <ellipse cx="60" cy="23" rx="11.5" ry="12.5" fill="url(#osc-metal)" stroke="#2a2008" stroke-opacity="0.32" stroke-width="1"/>
+
+      <!-- блиск -->
+      <ellipse cx="55.6" cy="18" rx="3" ry="4" fill="#ffffff" opacity="0.5"/>
+      <path d="M42 72 C40.5 86 40 102 40.5 118 L43 118 C42.5 102 43 86 44.5 72 Z" fill="#ffffff" opacity="0.22"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top">
+      <span class="nav__mark" aria-hidden="true">★</span>
+      <span>Оскар · стрічка часу</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#statuette">Статуетка</a>
+      <a href="#records">Рекорди</a>
+      <a href="#timeline">Хронологія</a>
+      <a href="#sources">Джерела</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg" style="background-image:url('img/ceremony-1929.jpg')" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__figure" aria-hidden="true">
+        <svg class="hero__statue"><use href="#oscar"/></svg>
+      </div>
+      <p class="hero__kicker">Кінопремія «Оскар» · 1929 — 2025</p>
+      <h1 class="hero__title">Стрічка часу<br><em>«Оскара»</em></h1>
+      <p class="hero__lead">
+        Найважливіші моменти головної кінонагороди світу — від першої 15-хвилинної
+        церемонії в готелі «Рузвельт» до неангломовного «Паразита», що забрав
+        «Найкращий фільм». 24 ключові події, зібрані з інфографіки та додаткових джерел.
+      </p>
+
+      <div class="chips">
+        <div class="chip"><b>34 см</b><span>висота статуетки</span></div>
+        <div class="chip"><b>3,9 кг</b><span>вага</span></div>
+        <div class="chip"><b>5</b><span>кінопрофесій на котушці</span></div>
+        <div class="chip"><b>24</b><span>події у стрічці</span></div>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="#timeline">Дивитись хронологію</a>
+        <a class="btn btn--ghost" href="#statuette">Що на інфографіці</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATUETTE -->
+  <section class="section" id="statuette">
+    <div class="section__head reveal">
+      <p class="section__kicker">Сторінка 80</p>
+      <h2 class="section__title">Статуетка «Оскар» Американської кіноакадемії</h2>
+      <p class="section__sub">Те, що зчитується з інфографіки — фактами, без води.</p>
+    </div>
+
+    <div class="grid grid--facts">
+      <article class="fact reveal">
+        <h3>Стиль і форма</h3>
+        <p>Артдеко. Лицар із мечем стоїть на <strong>котушці кіноплівки</strong>.</p>
+      </article>
+      <article class="fact reveal">
+        <h3>5 спиць — 5 професій</h3>
+        <p>Актори, режисери, продюсери, техніки, <strong>сценаристи</strong>.</p>
+      </article>
+      <article class="fact reveal">
+        <h3>Перша статуетка · 1929</h3>
+        <p>Німецький актор <strong>Еміль Яннінгс</strong> — за «Останній наказ» і «Шлях усякої плоті».</p>
+      </article>
+      <article class="fact reveal">
+        <h3>Автори</h3>
+        <p>Скульптор <strong>Джордж Стенлі</strong>, художник-постановник <strong>Седрік Гіббонс</strong>.</p>
+      </article>
+      <article class="fact reveal">
+        <h3>Виробництво</h3>
+        <p><strong>50 статуеток — 3 місяці</strong> роботи.</p>
+      </article>
+      <article class="fact reveal">
+        <h3>Матеріали</h3>
+        <p>Золоте покриття; в інфографіці згадано <strong>4-каратне золото</strong>.</p>
+      </article>
+      <article class="fact reveal">
+        <h3>Габарити</h3>
+        <p>Висота <strong>34 см</strong>, вага <strong>3,9 кг</strong>.</p>
+      </article>
+      <article class="fact fact--note reveal">
+        <h3>Категорія другого плану</h3>
+        <p>В інфографіці — <strong>1939 рік</strong>. Історично категорію запровадили для фільмів
+        <strong>1936 року</strong>, перші нагороди вручили <strong>1937-го</strong>. Див. розділ «Джерела».</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- RECORDS -->
+  <section class="section section--alt" id="records">
+    <div class="section__head reveal">
+      <p class="section__kicker">Сторінка 81</p>
+      <h2 class="section__title">Рекорди кінопремії</h2>
+      <p class="section__sub">Найуспішніші фільми, акторські роботи та грошові рекорди.</p>
+    </div>
+
+    <div class="grid grid--records">
+      <article class="card card--wide reveal">
+        <h3>Найуспішніші фільми · 11 статуеток</h3>
+        <ul class="reclist">
+          <li><span>«Титанік»</span><b>1997</b></li>
+          <li><span>«Бен-Гур»</span><b>1959</b></li>
+          <li><span>«Володар перснів: Повернення короля»</span><b>2003</b></li>
+        </ul>
+      </article>
+
+      <article class="card card--wide reveal">
+        <h3>Фільми з усіма 5 найбільшими нагородами</h3>
+        <ul class="reclist">
+          <li><span>«Це сталося однієї ночі»</span><b>1934</b></li>
+          <li><span>«Пролітаючи над гніздом зозулі»</span><b>1975</b></li>
+          <li><span>«Мовчання ягнят»</span><b>1991</b></li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>«Звіяні вітром» · 1939</h3>
+        <p>Найкасовіший фільм в історії кіно. Перша темношкіра лауреатка —
+        <strong>Гетті Макденіел</strong>.</p>
+      </article>
+
+      <article class="card reveal">
+        <h3>«Паразити» · 2019</h3>
+        <p>Перший неангломовний фільм, що отримав «Оскар» за найкращий фільм. Також —
+        «Золота пальмова гілка».</p>
+      </article>
+
+      <article class="card reveal">
+        <h3>Найтитулованіша персона</h3>
+        <p><strong>Волт Дісней</strong> — 22 статуетки. Серед акторів — <strong>Кетрін Гепберн</strong>,
+        4 «Оскари». Найчастіше номінована акторка — <strong>Меріл Стріп</strong>.</p>
+      </article>
+
+      <article class="card reveal">
+        <h3>Касовий рекорд</h3>
+        <p>Збори — <strong>$390 млн</strong> (≈ <strong>$4 млрд</strong> за курсом 2022 року).
+        «Звіяні вітром» — найкасовіший фільм в історії.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section" id="timeline">
+    <div class="section__head reveal">
+      <p class="section__kicker">Завдання 3</p>
+      <h2 class="section__title">Хронологічна стрічка часу</h2>
+      <p class="section__sub">
+        <strong>24</strong> ключові події — мінімум 20 виконано. Фільтруй за епохою.
+      </p>
+    </div>
+
+    <div class="filters" id="filters" role="tablist" aria-label="Фільтр за епохою"></div>
+
+    <div class="tour-bar">
+      <button type="button" class="btn btn--gold btn--sm" id="tour-start">▶ Тур по роках</button>
+      <p class="timeline__count" id="timeline-count" aria-live="polite"></p>
+    </div>
+
+    <div class="timeline-wrap">
+      <div class="timeline__progress" id="timeline-progress" aria-hidden="true"></div>
+      <div class="timeline" id="timeline-list">
+        <noscript><p class="timeline__empty">Для перегляду стрічки потрібен JavaScript.</p></noscript>
+      </div>
+    </div>
+
+    <p class="timeline__empty" id="timeline-empty" hidden>Немає подій у цій епосі.</p>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section--alt" id="gallery">
+    <div class="section__head reveal">
+      <p class="section__kicker">Архів</p>
+      <h2 class="section__title">Галерея</h2>
+      <p class="section__sub">Справжні знімки з Wikimedia Commons — публічне надбання та CC. Автор і ліцензія вказані під кожним фото. Для одного знімка рік у підписі непевний: див. підпис під фото.</p>
+    </div>
+
+    <div class="gallery">
+      <figure class="shot shot--wide">
+        <img src="img/ceremony-1929.jpg" alt="Банкет Американської кіноакадемії" loading="lazy">
+        <figcaption>
+          <b>Банкет кіноакадемії</b>
+          <span>Підпис на самому фото вказує 16 травня 1930</span>
+          <em>Public domain · AMPAS</em>
+        </figcaption>
+      </figure>
+
+      <figure class="shot">
+        <img src="img/disney-1953.jpg" alt="Волт Дісней зі статуеткою «Оскар», 1953" loading="lazy">
+        <figcaption>
+          <b>Волт Дісней зі статуеткою</b>
+          <span>1953</span>
+          <em>CC BY 2.0 · UCLA Library Special Collections</em>
+        </figcaption>
+      </figure>
+
+      <figure class="shot shot--tall">
+        <img src="img/mary-pickford-1930.jpg" alt="Мері Пікфорд зі статуеткою, 1930" loading="lazy">
+        <figcaption>
+          <b>Мері Пікфорд</b>
+          <span>2-га церемонія, 1930</span>
+          <em>Public domain · AMPAS</em>
+        </figcaption>
+      </figure>
+
+      <figure class="shot shot--tall">
+        <img src="img/janet-gaynor-1929.jpg" alt="Джанет Гейнор зі статуеткою за найкращу жіночу роль, 1929" loading="lazy">
+        <figcaption>
+          <b>Джанет Гейнор</b>
+          <span>Найкраща акторка, 1929</span>
+          <em>Public domain · AMPAS</em>
+        </figcaption>
+      </figure>
+
+      <figure class="shot shot--tall">
+        <img src="img/frank-borzage-1929.jpg" alt="Френк Борзаж зі статуеткою за найкращу режисуру, 1929" loading="lazy">
+        <figcaption>
+          <b>Френк Борзаж</b>
+          <span>Найкращий режисер, 1929</span>
+          <em>Public domain · AMPAS</em>
+        </figcaption>
+      </figure>
+
+      <figure class="shot shot--wide">
+        <img src="img/3rd-oscars-1930.jpg" alt="Третя церемонія «Оскара», 1930" loading="lazy">
+        <figcaption>
+          <b>3-тя церемонія</b>
+          <span>5 листопада 1930</span>
+          <em>Public domain · L.A. Weaver</em>
+        </figcaption>
+      </figure>
+
+      <figure class="shot shot--tall">
+        <img src="img/carl-laemmle-1930.jpg" alt="Карл Леммле зі статуеткою «Оскар», 1930" loading="lazy">
+        <figcaption>
+          <b>Карл Леммле</b>
+          <span>«На західному фронті без змін», 1930</span>
+          <em>Public domain · Los Angeles Times</em>
+        </figcaption>
+      </figure>
+
+      <figure class="shot shot--wide">
+        <img src="img/james-stewart-1941.jpg" alt="Джеймс Стюарт отримує «Оскар», 1941" loading="lazy">
+        <figcaption>
+          <b>Джеймс Стюарт</b>
+          <span>Отримує «Оскар», 1941</span>
+          <em>Public domain · Universal Newsreel</em>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SOURCES -->
+  <section class="section section--alt" id="sources">
+    <div class="section__head reveal">
+      <p class="section__kicker">Уточнення</p>
+      <h2 class="section__title">Джерела та поправки</h2>
+      <p class="section__sub">Де інфографіка неточна — і як насправді.</p>
+    </div>
+
+    <ol class="sources">
+      <li class="reveal">
+        <b>Категорії другого плану.</b>
+        В інфографіці вказано 1939 рік. Насправді категорії «Найкращий актор / акторка
+        другого плану» запровадили для фільмів <strong>1936 року</strong>, перші нагороди
+        вручили <strong>4 березня 1937 року</strong> на 9-й церемонії.
+      </li>
+      <li class="reveal">
+        <b>Матеріал статуетки.</b>
+        «Чистого золота» ніколи не було: спочатку — бронза з позолотою, у роки Другої
+        світової (1943–1945) — гіпс через дефіцит металу, нині — бриттанія з покриттям
+        24-каратним золотом.
+      </li>
+      <li class="reveal">
+        <b>Назва «Оскар».</b>
+        Історію про дядька Оскара (Маргарет Геррік) найчастіше повторюють, але є й версії
+        про актора Оскара Гомолку та Бетті Девіс. Офіційно Академія почала вживати назву
+        з <strong>1939 року</strong>.
+      </li>
+      <li class="reveal">
+        <b>Перша церемонія.</b>
+        Список переможців заздалегідь віддали пресі — звідси поява конвертів 1941 року.
+      </li>
+      <li class="reveal">
+        <b>«Паразити».</b>
+        Єдиний фільм, що поєднав «Золоту пальмову гілку» Канн і «Оскар» за найкращий фільм.
+      </li>
+      <li class="reveal">
+        <b>Неточність у стрічці часу.</b>
+        Довжина та збори подані за інфографікою; для здачі роботи достатньо посилатися
+        на неї. Для академічної роботи звіряй із сайтом AMPAS (oscars.org).
+      </li>
+    </ol>
+  </section>
+
+</main>
+
+<div class="tour" id="tour" hidden>
+  <div class="tour__body">
+    <span class="tour__year" id="tour-year"></span>
+    <h3 class="tour__title" id="tour-title"></h3>
+    <p class="tour__text" id="tour-text"></p>
+    <p class="tour__fun" id="tour-fun"></p>
+  </div>
+  <div class="tour__controls">
+    <button type="button" class="btn btn--ghost btn--sm" id="tour-prev">← Назад</button>
+    <span class="tour__counter" id="tour-counter"></span>
+    <button type="button" class="btn btn--gold btn--sm" id="tour-next">Далі →</button>
+    <button type="button" class="btn btn--ghost btn--sm" id="tour-stop">Вийти ✕</button>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Закрити">✕</button>
+  <figure class="lightbox__figure">
+    <img id="lightbox-img" alt="">
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<footer class="footer">
+  <p>Стрічка часу «Оскара» · 24 події · 1929—2025</p>
+  <p class="footer__muted">Джерело інфографіки: New Voice, «Оскар-2025 уже сьогодні. Номінанти на 97-му премію Американської кіноакадемії, 2 березня 2025 р.»</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
