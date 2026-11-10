@@ -269,13 +269,9 @@
     article.className = 'event';
     article.dataset.era = ev.era;
 
-    const dot = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    dot.setAttribute('class', 'event__dot');
+    const dot = document.createElement('span');
+    dot.className = 'event__dot';
     dot.setAttribute('aria-hidden', 'true');
-    dot.setAttribute('viewBox', '0 0 100 220');
-    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-    use.setAttribute('href', '#oscar');
-    dot.appendChild(use);
 
     const card = document.createElement('div');
     card.className = 'event__card';
